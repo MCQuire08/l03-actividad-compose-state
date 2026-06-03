@@ -18,7 +18,7 @@ import androidx.compose.ui.unit.dp
 //             ¿Por qué ocurre esto? Agrega un comentario explicando el problema.
 @Composable
 fun ContadorScreen() {
-    var count = 0 // No funciona: ???
+    var count = 0 // No funciona: porque las funciones @Composable se vuelven a ejecutar cuando las UI necesita actualizarse.
 
     Column(
         modifier = Modifier
